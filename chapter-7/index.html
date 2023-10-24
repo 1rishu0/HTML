@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+        .container{
+            display: grid;
+            background-color: yellow;
+            height: 56vh;
+            /* grid-row-gap: 9px;   /*isme row ke beech ke gap ke baare mei bataya gaya hai
+            grid-column-gap: 9px; */
+             grid-gap: 9px 9px;   /* isme jo pehli value hai voh row batayegi aur jo doosri hai voh column batayegi  par agar meine sirf ek value likhi hai toh voh dono mei lag jaayegi*/
+            /* grid-template-columns: 33px 334px auto;
+            grid-template-rows: 33px 33px auto; */
+            grid-template-columns:auto auto auto;
+            grid-template-rows: auto auto auto auto auto;
+
+
+        }
+        .item{
+            background-color: aquamarine;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" style="grid-row: 2/span 3;">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+
+    </div>
+</body>
+</html>

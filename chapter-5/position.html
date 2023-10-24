@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        /* *{ */
+            /* margin: 0; */
+            /* padding: 0; */
+        /* } */
+        ul{
+            background-color: blue;
+        }
+        li{
+            /* display: inline; */
+            list-style: circle inside url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Red_dot.svg/1200px-Red_dot.svg.png");      /* bullet point ko design karne mei help karta hai*/
+        }
+        header{
+            background-color: black;
+            color: white;
+            height: 70px;
+        }
+        p{
+            text-align: center;
+            border: 2px solid red;
+        }
+        .container{
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            /* position: relative; ab aap top/bottom/left/right property use kar sakte hai */
+            position: absolute;
+            padding: 0px 34px;
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iste ipsum! Nam praesentium nesciunt autem quaerat beatae expedita alias ipsum perferendis at inventore nulla asperiores vel perspiciatis officia corporis, harum dolorem, cum illo. Eveniet?
+        </p>
+        <div class="box">
+            I am a box
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ut voluptatibus dicta soluta praesentium ad saepe assumenda sequi fuga earum explicabo voluptate illo id, aperiam vero minima eaque, odio alias quod eius ipsa consequatur.
+        </div>
+    </div>
+    <ul>
+        <li>applw</li>
+        <li>Banana</li>
+        <li>oranges</li>
+    </ul>
+</body>
+</html>

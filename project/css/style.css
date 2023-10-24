@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lato:wght@300&display=swap');
+
+:root {
+    --main-bg-color: #2874f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    font-family: 'lato', Courier, monospace;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 88px;
+    padding: 0 25px;
+}
+
+nav ul {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 8, 126);
+    font-weight: bolder;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 30vw;
+    height: 27px;
+    border-radius: 5px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+}
+
+.search button {
+    font-family: 'lato', Courier, monospace;
+    font-weight: 900;
+}
+
+.search button:hover {
+    color: rgb(11, 11, 172);
+    font-weight: bolder;
+}
+
+.slider {
+    margin: auto;
+    width: 80vw;
+    margin: 12px auto;
+    overflow: hidden;
+}
+
+.card {
+    max-width: 91vw;
+    margin: 37px auto;
+    font-family: 'lato', Courier, monospace;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-items {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.card h2 {
+    font-family: 'lato', Courier, monospace;
+}
+
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+footer {
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'lato', Courier, monospace;
+}

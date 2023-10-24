@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .container{
+             display: flex;  /* yeh display ko flexbox mei convert kar deta hai  */
+            flex-direction: row;
+             flex-wrap: wrap;   /*  isme yeh window ke saath kaam karta hai mtlb jitni window kam hogi toh toh voh wrap kar dega box ye responsive website ke liye kaam aata hai  */
+             justify-content: center;
+             background-color: aqua;
+             height: 50vh;
+             align-items: center;
+             align-content: center;
+        }
+        .box1{
+            height: 234px;
+            width: 345px;
+            background-color: blue;
+            border: 2px solid black;
+            /* order: 4;   isme jis class mei jonsa order likha hai voh jaake uss number ki jagah pe chala jaayega aur iski initial value 0 hoti hai */
+            /* align-self: flex-end;  isme jis class mei likha hai voh sirf apne aapko flex ke end mei bhejega na ki saare boxes ko*/
+            flex-grow: 1;
+        }
+        .box2{
+            height: 234px;
+            width: 345px;
+            background-color: red;
+            /* float: right;   block ko right ki taraf shift kar dega par agar dono element ek taraf shift kiye toh jagah hone ki wajah se voh dono box ko inline kar dega par yaad rakhiyo ki pehle box one jaayega right fir box two ki baari hogi ek aur cheez agar sirf box one ko hi right mei shift kiya toh box two upper aa jaayega   */
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            box1
+        </div>
+        <div class="box2">
+            box2
+        </div>
+        <div class="box2">
+            box3
+        </div>
+        <div class="box2">
+            box4
+        </div>
+    </div>
+    
+</body>
+</html>

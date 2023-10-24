@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        .container {
+            background-color: red;
+            height: 50vh;
+        }
+
+        .box {
+            border: 2px solid rgb(15, 5, 5);
+            /* transform: translate(34px, 113px); */
+            /*  translate isme bada deta hai box ko aage jisme pehli value x ki jagah batati hai aur doosri value y ki */
+            /* transform: rotate(0.5turn); */
+            /* isme value rotate hoti hai app isme deg mei bhi likh sakte hai */
+            /* transform-origin: center;    isme ye bata hai ki jise ham transform kar rhe hai voh kis point se property ko follow karega maatlab rotate kis point se karega center se ya  top right se  */
+            /* transform: scale(3 , 4);   yeh aapke object ko kheech deta hai 3 bata rha hai x aur 4 bata rha y */
+            /* transform: skew(4deg , 6deg); yeh essa dikhata hia ki jo object hai voh bahar ki taraf aa gaya hai  */
+            height: 50vh;
+        }
+        img{
+            width: 50vh;
+            height: 50vh;
+            /* transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: ease-in; 
+            transition-delay: 1s*/
+            transition: width 3s ease-in, height 2s  ease-in;
+        }
+
+        img:hover {
+            width: 50px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img
+                src="https://www.shutterstock.com/image-photo/surreal-image-african-elephant-wearing-260nw-1365289022.jpg">
+        </div>
+    </div>
+</body>
+
+</html>
